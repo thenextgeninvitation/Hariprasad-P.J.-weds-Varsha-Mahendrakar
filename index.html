@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hariprasad weds Varsha — Wedding Invitation</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap">
+<style>
+:root{--bg1:#fdeef5;--bg2:#efe3ff;--fg:#2b1020;--soft:#6a4559;--acc:#c2185b;--acc2:#b8860b;
+--glass:rgba(255,255,255,.55);--glass2:rgba(255,255,255,.35);--edge:rgba(255,255,255,.8);--shadow:0 10px 40px rgba(120,30,80,.15);
+--o1:#ff7ab8;--o2:#ffd27a;--o3:#a98bff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#12041a;--bg2:#2a0a2e;--fg:#fbefff;--soft:#cfb4d6;--acc:#ff7bb8;--acc2:#f6cf75;
+--glass:rgba(255,255,255,.08);--glass2:rgba(255,255,255,.05);--edge:rgba(255,255,255,.22);--shadow:0 10px 40px rgba(0,0,0,.45);--o1:#d81b72;--o2:#c9892b;--o3:#6a3df0}}
+:root[data-theme="dark"]{--bg1:#12041a;--bg2:#2a0a2e;--fg:#fbefff;--soft:#cfb4d6;--acc:#ff7bb8;--acc2:#f6cf75;
+--glass:rgba(255,255,255,.08);--glass2:rgba(255,255,255,.05);--edge:rgba(255,255,255,.22);--shadow:0 10px 40px rgba(0,0,0,.45);--o1:#d81b72;--o2:#c9892b;--o3:#6a3df0}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--fg);font-family:'Inter',system-ui,sans-serif;font-weight:300;font-size:16px;line-height:1.7;text-align:center;
+background:linear-gradient(160deg,var(--bg1),var(--bg2));background-attachment:fixed;overflow-x:hidden}
+.orbs{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.orbs i{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;animation:float 18s ease-in-out infinite}
+.orbs i:nth-child(1){width:380px;height:380px;background:var(--o1);top:-80px;left:-90px}
+.orbs i:nth-child(2){width:320px;height:320px;background:var(--o2);top:38%;right:-100px;animation-delay:-6s}
+.orbs i:nth-child(3){width:420px;height:420px;background:var(--o3);bottom:-120px;left:15%;animation-delay:-11s}
+@keyframes float{50%{transform:translate(40px,-50px) scale(1.12)}}
+section{padding:60px 18px}
+.wrap{max-width:760px;margin:0 auto}
+.glass{background:var(--glass);border:1px solid var(--edge);border-radius:28px;box-shadow:var(--shadow),inset 0 1px 0 var(--edge);
+-webkit-backdrop-filter:blur(22px) saturate(160%);backdrop-filter:blur(22px) saturate(160%);padding:36px 24px}
+.tag{display:inline-block;padding:6px 16px;border:1px solid var(--edge);border-radius:999px;background:var(--glass2);font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0;line-height:1.15}
+h2{font-size:clamp(30px,6vw,44px);margin:16px 0 14px}
+h2 em,.grad{font-style:italic;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+p{margin:0 0 14px;color:var(--soft)}
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:center;padding-top:40px}
+.hero .glass{padding:48px 22px}
+.bless{font-size:13px;color:var(--soft);margin:18px 0 6px}
+.hero h1{font-size:clamp(44px,11vw,84px);margin:2px 0}
+.weds{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:28px;color:var(--acc2)}
+.date{margin:18px 0 26px;font-weight:500;letter-spacing:.2em;font-size:13px}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:420px;margin:0 auto 30px}
+.count div{padding:14px 4px;border-radius:18px;border:1px solid var(--edge);background:var(--glass2)}
+.count b{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:34px;font-weight:600;line-height:1.1}
+.count span{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+.btn{display:inline-block;padding:14px 32px;border-radius:999px;color:#fff;text-decoration:none;font-weight:500;letter-spacing:.14em;font-size:12px;text-transform:uppercase;
+background:linear-gradient(120deg,#e0206f,#9b3df0);box-shadow:0 8px 24px rgba(200,40,120,.4);transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(200,40,120,.55)}
+.fam{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:22px 0}
+.fam div{padding:20px 14px;border-radius:20px;border:1px solid var(--edge);background:var(--glass2);font-size:14px;color:var(--soft)}
+.fam b{display:block;color:var(--fg);font-weight:600;font-size:15px;margin-bottom:4px}
+.names{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(26px,6vw,38px);font-weight:600;margin:4px 0}
+.cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:26px}
+.cards .glass{padding:30px 18px}
+.cards h3{font-size:28px;margin:10px 0}
+.when{font-weight:500;font-size:14px;color:var(--acc)}
+.pin{font-size:38px}
+.wel{list-style:none;padding:0;margin:14px 0}
+.wel li{display:inline-block;margin:4px;padding:6px 16px;border-radius:999px;border:1px solid var(--edge);background:var(--glass2);font-size:14px;color:var(--soft)}
+footer{padding:20px 18px 40px}
+footer a.top{color:var(--acc);text-decoration:none;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:500}
+.biz{margin-top:24px;padding-top:22px;border-top:1px solid var(--edge)}
+a.wa{display:inline-flex;align-items:center;gap:10px;padding:12px 24px;border-radius:999px;border:1px solid rgba(37,211,102,.6);background:rgba(37,211,102,.15);
+color:#12823b;font-weight:600;text-decoration:none;font-size:15px;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) a.wa{color:#7dffb0}}
+:root[data-theme="dark"] a.wa{color:#7dffb0}
+.copy{margin-top:16px;font-size:13px;color:var(--soft)}
+.copy b{color:var(--acc);font-weight:600}
+#water{position:fixed;inset:0;width:100%;height:100%;z-index:50;pointer-events:none}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.rv.in,.noanim .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.orbs i{animation:none}.rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="orbs"><i></i><i></i><i></i></div>
+<canvas id="water" aria-hidden="true"></canvas>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="glass rv">
+      <span class="tag">Wedding Invitation</span>
+      <div class="bless">With the blessings of Sri Siddarameshwara Swami<br>&amp; Sri Narasimha Swami</div>
+      <p style="margin:24px 0 6px;font-size:12px;letter-spacing:.3em;text-transform:uppercase">The Wedding Of</p>
+      <h1 class="grad">Hariprasad P.J.</h1>
+      <div class="weds">weds</div>
+      <h1 class="grad">Varsha Mahendrakar</h1>
+      <div class="date">28 &amp; 29 NOVEMBER 2026 · SIRA, TUMAKURU</div>
+      <div class="count" aria-label="Countdown to the wedding">
+        <div><b id="d">00</b><span>Days</span></div>
+        <div><b id="h">00</b><span>Hours</span></div>
+        <div><b id="m">00</b><span>Mins</span></div>
+        <div><b id="s">00</b><span>Secs</span></div>
+      </div>
+      <a class="btn" href="#events">Event Details</a>
+    </div>
+  </div>
+</section>
+
+<section id="announce">
+  <div class="wrap">
+    <div class="glass rv">
+      <span class="tag">Our Humble Announcement</span>
+      <h2>Together with our <em>families</em></h2>
+      <div class="fam">
+        <div><b>Smt. Manjulabai &amp; Sri Dhananjayarao P.K.</b>Nayakarahatti, Sira Town<br>Tumakuru District</div>
+        <div><b>Smt. Shobhabai Vitthal Mahendrakar &amp; Sri Vitthalrao Parashuram Mahendrakar</b>Talikote Town<br>Bijapur District</div>
+      </div>
+      <p>We announce that in the Shalivahana Shaka year 1948, Sri Parabhava Nama Samvatsara, Karthika Masa, Bahula Panchami, the Prathama Shastra will be held, and on Shashthi, <b>Sunday, 29-11-2026</b>, between <b>9:00 AM and 9:45 AM</b> in the auspicious Dhanur Lagna, the marriage of</p>
+      <p style="margin-bottom:0;font-size:14px">The younger son of Smt. Umabai and the late Sri Jayasheelarao Pokale</p>
+      <div class="names grad">Chi. Hariprasad P.J., B.Sc.</div>
+      <p style="margin:6px 0;color:var(--acc2)">✦ with ✦</p>
+      <p style="margin-bottom:0;font-size:14px">The younger daughter of Smt. Shobhabai and Sri Vitthal Mahendrakar</p>
+      <div class="names grad">Chi. Sau. Varsha Mahendrakar, B.Com.</div>
+      <p style="margin-top:20px">will be solemnised at Sri Panduranga Rukmini Kalyana Mantapa, Mecca Rice Mill Road, Sira. As decided by our elders, we request you to attend with family and bless the couple.</p>
+    </div>
+  </div>
+</section>
+
+<section id="events">
+  <div class="wrap">
+    <div class="rv"><span class="tag">Save The Date</span><h2>Come, Celebrate <em>With Us</em></h2></div>
+    <div class="cards">
+      <div class="glass rv">
+        <div style="font-size:26px">✨</div>
+        <span class="tag">Evening One</span>
+        <h3>Reception &amp; Prathama Shastra</h3>
+        <div class="when">Saturday, 28th November 2026<br>6:30 PM</div>
+        <p style="margin:12px 0 0;font-size:14px">Sri Panduranga Rukmini Kalyana Mantapa, Sira</p>
+      </div>
+      <div class="glass rv">
+        <div style="font-size:26px">🪔</div>
+        <span class="tag">Muhurtha</span>
+        <h3>Wedding</h3>
+        <div class="when">Sunday, 29th November 2026<br>9:00 – 9:45 AM</div>
+        <p style="margin:12px 0 0;font-size:14px">Sri Panduranga Rukmini Kalyana Mantapa, Sira</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="venue">
+  <div class="wrap">
+    <div class="glass rv">
+      <div class="pin">📍</div>
+      <span class="tag">Venue</span>
+      <h2>Sri Panduranga Rukmini <em>Kalyana Mantapa</em></h2>
+      <p>Mecca Rice Mill Road, Sira Town<br>Tumakuru District, Karnataka</p>
+      <a class="btn" href="https://maps.app.goo.gl/fyvTYQyiNHGstSAh9" target="_blank" rel="noopener">Open In Google Maps →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="glass rv">
+      <span class="tag">With Warm Welcome From</span>
+      <ul class="wel" style="margin-top:20px">
+        <li>Sri Rameshwararao P.K. &amp; Pokale family</li><li>Malode family</li><li>Bhasuttur family</li><li>Navale family</li><li>Mahendrakar family</li><li>All relatives &amp; friends</li>
+      </ul>
+      <span class="tag" style="margin-top:22px">Awaiting Your Presence</span>
+      <ul class="wel" style="margin-top:20px">
+        <li>Smt. Manjulabai, Sri Dhananjayakumar P.K.</li><li>Smt. Shobhabai, Sri Vitthal Mahendrakar</li><li>Chi. Sirigaanavi</li><li>Chi. Purvik</li><li>Chi. Nishanth</li><li>Chi. Mahima</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="top" href="#top">↑ Return To The Top</a>
+    <div class="biz">
+      <p>For similar web invitations:</p>
+      <a class="wa" href="https://wa.me/918095117035" target="_blank" rel="noopener">💬 WhatsApp Business: +91 80951 17035</a>
+      <div class="copy">© 2026 <b>Next-Gen Group</b>. All Rights Reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var target=new Date('2026-11-29T09:00:00+05:30').getTime();
+  function pad(n){return String(n).padStart(2,'0');}
+  function tick(){
+    var t=Math.max(0,target-Date.now());
+    document.getElementById('d').textContent=pad(Math.floor(t/864e5));
+    document.getElementById('h').textContent=pad(Math.floor(t%864e5/36e5));
+    document.getElementById('m').textContent=pad(Math.floor(t%36e5/6e4));
+    document.getElementById('s').textContent=pad(Math.floor(t%6e4/1e3));
+  }
+  tick();setInterval(tick,1000);
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){document.body.className='noanim';return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+<script>
+/* Water ripple effect on mouse move / touch */
+(function(){
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var cv=document.getElementById('water'),ctx=cv.getContext('2d'),W=0,H=0,dpr=1,rip=[],running=false,lx=-99,ly=-99,lt=0;
+  function size(){dpr=Math.min(window.devicePixelRatio||1,2);W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);}
+  size();addEventListener('resize',size);
+  function add(x,y,big){
+    rip.push({x:x,y:y,t:performance.now(),life:big?1500:1000,max:big?150:70+Math.random()*25});
+    if(rip.length>40)rip.shift();
+    if(!running){running=true;requestAnimationFrame(draw);}
+  }
+  function draw(now){
+    ctx.clearRect(0,0,W,H);
+    rip=rip.filter(function(r){return now-r.t<r.life;});
+    rip.forEach(function(r){
+      var p=(now-r.t)/r.life,e=1-Math.pow(1-p,3),R=e*r.max,a=1-p;
+      var g=ctx.createRadialGradient(r.x,r.y,R*.5,r.x,r.y,R);
+      g.addColorStop(0,'rgba(140,200,255,0)');
+      g.addColorStop(1,'rgba(140,200,255,'+(.2*a)+')');
+      ctx.fillStyle=g;ctx.beginPath();ctx.arc(r.x,r.y,R,0,6.2832);ctx.fill();
+      for(var k=0;k<3;k++){
+        var rr=R*(1-k*.24);if(rr<1)continue;
+        ctx.lineWidth=2.2-k*.5;
+        ctx.strokeStyle='rgba(255,255,255,'+(a*(.8-k*.22))+')';
+        ctx.beginPath();ctx.arc(r.x,r.y,rr,0,6.2832);ctx.stroke();
+        ctx.lineWidth=1.4;
+        ctx.strokeStyle='rgba(70,150,255,'+(a*(.4-k*.1))+')';
+        ctx.beginPath();ctx.arc(r.x,r.y,rr+2.5,0,6.2832);ctx.stroke();
+      }
+      ctx.lineWidth=3.5;ctx.lineCap='round';
+      ctx.strokeStyle='rgba(255,255,255,'+(a*.9)+')';
+      ctx.beginPath();ctx.arc(r.x,r.y,R,-2.5,-1.7);ctx.stroke();
+    });
+    if(rip.length)requestAnimationFrame(draw);else{running=false;ctx.clearRect(0,0,W,H);}
+  }
+  function trail(x,y){
+    var now=performance.now(),dx=x-lx,dy=y-ly;
+    if(now-lt>70&&dx*dx+dy*dy>600){add(x,y,false);lx=x;ly=y;lt=now;}
+  }
+  addEventListener('pointermove',function(e){if(e.pointerType!=='touch')trail(e.clientX,e.clientY);},{passive:true});
+  addEventListener('pointerdown',function(e){if(e.pointerType!=='touch')add(e.clientX,e.clientY,true);},{passive:true});
+  addEventListener('touchstart',function(e){var t=e.touches[0];if(t){add(t.clientX,t.clientY,true);lx=t.clientX;ly=t.clientY;}},{passive:true});
+  addEventListener('touchmove',function(e){var t=e.touches[0];if(t)trail(t.clientX,t.clientY);},{passive:true});
+})();
+</script>
+</body>
+</html>
