@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="locked">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Hariprasad weds Varsha — Wedding Invitation</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&family=Yellowtail&display=swap">
 <style>
 :root{--bg1:#fdeef5;--bg2:#efe3ff;--fg:#2b1020;--soft:#6a4559;--acc:#c2185b;--acc2:#b8860b;
 --glass:rgba(255,255,255,.55);--glass2:rgba(255,255,255,.35);--edge:rgba(255,255,255,.8);--shadow:0 10px 40px rgba(120,30,80,.15);
@@ -66,7 +66,31 @@ color:#12823b;font-weight:600;text-decoration:none;font-size:15px;-webkit-backdr
 :root[data-theme="dark"] a.wa{color:#7dffb0}
 .copy{margin-top:16px;font-size:13px;color:var(--soft)}
 .copy b{color:var(--acc);font-weight:600}
-#water{position:fixed;inset:0;width:100%;height:100%;z-index:50;pointer-events:none}
+#water{position:fixed;inset:0;width:100%;height:100%;z-index:200;pointer-events:none}
+html.locked,html.locked body{overflow:hidden;height:100%}
+#intro{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
+#intro .pl,#intro .pr{position:absolute;top:0;bottom:0;width:50.5%;background:radial-gradient(circle at 18% 22%,rgba(216,27,114,.55),transparent 45%),radial-gradient(circle at 85% 80%,rgba(212,160,47,.35),transparent 45%),radial-gradient(circle at 60% 40%,rgba(123,60,240,.3),transparent 50%),linear-gradient(160deg,#4a0a1c,#2a0612);background-size:198% 100%;transition:transform 1.1s cubic-bezier(.77,0,.18,1)}
+#intro .pl{background-position:left}#intro .pr{background-position:right}
+#intro .io{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none;transition:opacity .5s}
+#intro .io i{position:absolute;border-radius:50%;filter:blur(60px);opacity:.6;animation:float 16s ease-in-out infinite}
+#intro .io i:nth-child(1){width:320px;height:320px;background:#d81b72;top:-70px;left:-70px}
+#intro .io i:nth-child(2){width:280px;height:280px;background:#d4a02f;bottom:-70px;right:-50px;animation-delay:-5s}
+#intro .io i:nth-child(3){width:260px;height:260px;background:#7b3cf0;top:42%;left:58%;opacity:.45;animation-delay:-9s}
+#intro .tg{display:inline-block;padding:6px 16px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif;font-size:11px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:#f6d77a;margin-bottom:22px}
+#intro .ln{width:64px;height:2px;margin:0 auto 22px;border-radius:2px;background:linear-gradient(90deg,transparent,#f6d77a,transparent)}
+#intro .dt{margin:30px 0 0;font-family:'Inter',system-ui,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+#intro .pl{left:0}#intro .pr{right:0}
+#intro .in{position:relative;z-index:2;width:min(92vw,640px);padding:50px 24px 44px;border-radius:32px;background:linear-gradient(145deg,rgba(255,255,255,.15),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.26);box-shadow:0 24px 70px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.38);-webkit-backdrop-filter:blur(24px) saturate(160%);backdrop-filter:blur(24px) saturate(160%);transition:opacity .5s,transform .8s}
+#intro h1{font-family:'Yellowtail','Brush Script MT',cursive;font-weight:400;font-size:clamp(40px,10.5vw,84px);margin:0 0 14px;line-height:1.2;padding:0 .1em;background:linear-gradient(90deg,#f6d77a,#d4af37 45%,#ffeaa7);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 18px rgba(212,175,55,.35))}
+#intro .inv{font-family:'Cormorant Garamond',Georgia,serif;color:#fff;letter-spacing:.22em;text-transform:uppercase;font-size:clamp(17px,3.5vw,24px);margin:0 0 36px}
+#intro button{font-family:'Inter',system-ui,sans-serif;color:#f6d77a;background:rgba(212,175,55,.12);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid rgba(246,215,122,.7);border-radius:999px;padding:16px 40px;letter-spacing:.24em;text-transform:uppercase;font-size:13px;font-weight:500;cursor:pointer;transition:.3s;animation:glow 2.8s ease-in-out infinite}
+#intro button:hover,#intro button:focus-visible{background:linear-gradient(120deg,#f6d77a,#d4af37);color:#3a0613;outline:none;transform:translateY(-2px)}
+@keyframes glow{50%{box-shadow:0 0 30px rgba(246,215,122,.5)}}
+@media (prefers-reduced-motion:reduce){#intro .io i,#intro button{animation:none}}
+#intro.open .in,#intro.open .io{opacity:0;transform:scale(.94)}
+#intro.open .pl{transform:translateX(-101%)}
+#intro.open .pr{transform:translateX(101%)}
+#intro.gone{display:none}
 .rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
 .rv.in,.noanim .rv{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.orbs i{animation:none}.rv{opacity:1;transform:none;transition:none}}
@@ -75,6 +99,19 @@ color:#12823b;font-weight:600;text-decoration:none;font-size:15px;-webkit-backdr
 <body>
 <div class="orbs"><i></i><i></i><i></i></div>
 <canvas id="water" aria-hidden="true"></canvas>
+<div id="intro">
+  <div class="pl"></div><div class="pr"></div>
+  <div class="io"><i></i><i></i><i></i></div>
+  <div class="in">
+    <span class="tg">Wedding Invitation</span>
+    <h1>Hariprasad &amp; Varsha</h1>
+    <div class="ln"></div>
+    <p class="inv">You are invited</p>
+    <button id="openBtn" type="button">Open Invitation</button>
+    <p class="dt">28 &amp; 29 November 2026 · Sira</p>
+  </div>
+</div>
+<noscript><style>#intro{display:none}html.locked,html.locked body{overflow:auto}</style></noscript>
 
 <section class="hero" id="top">
   <div class="wrap">
@@ -241,5 +278,25 @@ color:#12823b;font-weight:600;text-decoration:none;font-size:15px;-webkit-backdr
   addEventListener('touchmove',function(e){var t=e.touches[0];if(t)trail(t.clientX,t.clientY);},{passive:true});
 })();
 </script>
+<script>
+(function(){
+  var i=document.getElementById('intro'),b=document.getElementById('openBtn');
+  if(!i||!b)return;
+  try{b.focus({preventScroll:true});}catch(e){}
+  b.addEventListener('click',function(){
+    if(i.classList.contains('open'))return;
+    i.classList.add('open');
+    var a=document.getElementById('bgm');
+    if(a){try{a.currentTime=0;var pr=a.play();if(pr&&pr.catch)pr.catch(function(){});}catch(e){}}
+    document.documentElement.classList.remove('locked');
+    window.scrollTo(0,0);
+    var hero=document.querySelectorAll('#top .rv');
+    hero.forEach(function(el){el.classList.remove('in');});
+    setTimeout(function(){hero.forEach(function(el){el.classList.add('in');});},450);
+    setTimeout(function(){i.classList.add('gone');},1300);
+  });
+})();
+</script>
+<audio id="bgm" preload="auto" src="music.mp3"></audio>
 </body>
 </html>
